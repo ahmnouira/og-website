@@ -8,22 +8,22 @@ const items = [
     text: "The platform is optimized to execute a large number of orders per second with minimal latency thanks to a powerful combination of Python, Cython and C++.",
   },
   {
-    id: 1,
-    title: "High throughput algotrading",
-    text: "OGREEN offers industry leading performance allowing you to execute complex strategies at scale across hundreds of symbols simultaneously.",
-  },
-  {
-    id: 1,
-    title: "High throughput algotrading",
-    text: "OGREEN offers industry leading performance allowing you to execute complex strategies at scale across hundreds of symbols simultaneously.",
-  },
-  {
     id: 2,
+    title: "High throughput algotrading",
+    text: "OGREEN offers industry leading performance allowing you to execute complex strategies at scale across hundreds of symbols simultaneously.",
+  },
+  {
+    id: 3,
+    title: "Easy integration",
+    text: "OGreen offers simple APIs and wrappers to integrate seamlessly with existing trading infrastructure.",
+  },
+  {
+    id: 4,
     title: "Horizontally scalable",
     text: "Honestly, Currencyeah is very easy to understand, the way is very easy to follow by people who are just learning about tradding, and the most important thing is that Currencyeah is very easy to use anywhere and anytime. ",
   },
   {
-    id: 3,
+    id: 5,
     title: "Cython and C code",
     text: "By compiling Python strategy code down to C using Cython, we achieve massive performance gains compared to running pure Python",
   },
