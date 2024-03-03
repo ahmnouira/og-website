@@ -22,7 +22,7 @@ const items = [
 </script>
 
 <template>
-  <nav class="hidden lg:block">
+  <nav class="hidden md:block">
     <ul class="flex">
       <li v-for="item in items">
         <NuxtLink :to="{ path: '/', hash: `#${item.title.toLowerCase()}` }">
