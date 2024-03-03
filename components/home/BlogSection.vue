@@ -38,12 +38,12 @@ const items = [
 <template>
   <div
     id="blog"
-    class="mx-auto p-4 sm:p-6 lg:p-12 max-w-[80%] w-full flex flex-col justify-center"
+    class="mx-auto p-4 sm:p-6 lg:p-16 w-full 2xl:max-w-[80%] flex flex-col justify-center"
   >
     <div class="flex justify-center">
       <h1 class="font-bold text-5xl text-white">Our Blogs</h1>
     </div>
-    <div class="my-16 grid grid-cols-3 gap-8">
+    <div class="my-8 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
       <Blog
         v-for="item in items"
         :key="item.id"

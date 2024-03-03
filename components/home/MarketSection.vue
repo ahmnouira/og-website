@@ -3,7 +3,7 @@
 <template>
   <div
     id="features"
-    class="mx-auto p-4 sm:p-6 lg:p-12 max-w-[80%] w-full flex flex-col justify-center"
+    class="mx-auto p-4 sm:p-6 lg:p-16 w-full 2xl:max-w-[80%] flex flex-col justify-center"
   >
     <div class="flex justify-center">
       <h1 class="font-bold text-5xl text-white">

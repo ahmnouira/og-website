@@ -17,7 +17,9 @@ const props = defineProps({
     <div
       class="flex items-end border-l-4 border-orange-700 p-2 md:min-w-32 md:overflow-hidden md:justify-center"
     >
-      <h3 class="text-3xl font-bold text-green-700">{{ props.value }}</h3>
+      <h3 class="text-3xl font-bold text-green-700">
+        {{ props.value }}
+      </h3>
     </div>
   </div>
 </template>

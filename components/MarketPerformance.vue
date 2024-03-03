@@ -38,8 +38,12 @@ const props = defineProps({
           </div>
         </div>
         <div class="flex flex-col">
-          <h1 class="text-4xl font-bold text-green-700">{{ props.percent }}</h1>
-          <h2 class="text-2xl font-bold text-gray-700">{{ props.pnl }}</h2>
+          <h1 class="text-3xl xl:text-4xl font-bold text-green-700">
+            {{ props.percent }}
+          </h1>
+          <h2 class="text-xl xl:text-2xl font-bold text-gray-700">
+            {{ props.pnl }}
+          </h2>
         </div>
       </div>
     </div>

@@ -53,18 +53,21 @@ const company = [
 <template>
   <footer class="h-96">
     <div
-      class="mx-auto p-4 sm:p-6 lg:p-8 max-w-[80%] flex justify-between w-full relative"
+      class="mx-auto p-4 sm:p-6 lg:p-8 2xl:max-w-[80%] md:flex md:justify-between sm:grid sm:grid-cols-1"
     >
-      <div class="flex flex-col lg:w-2/3 h-48">
+      <div class="flex flex-col w-full lg:w-[720px] mb-8 md:mb-0">
         <Logo />
         <p class="text-white my-4">
-          The most powerful strategy using Python and Cython with the raw speed
-          of C
+          Experience the difference with OGREEN.
           <br />
-          To create the ultimate algotrading experience.
+          Maximize your potential with our high-performance
+          <br />
+          platform and efficient tools.
         </p>
 
-        <div class="flex space-x-4 mt-4">
+        <div
+          class="flex justify-center md:justify-start space-x-4 my-4 md:mt-4"
+        >
           <a
             href="#"
             class="w-8 h-8 rounded-full flex justify-center items-center bg-orange-700"
@@ -123,49 +126,52 @@ const company = [
           </a>
         </div>
       </div>
+      <div class="w-full">
+        <div class="grid grid-cols-3 ml-4 gap-8">
+          <div class="flex flex-col">
+            <p class="text-lg font-bold text-white mb-4">Links</p>
+            <ul>
+              <li v-for="item in links" class="mb-4">
+                <NuxtLink
+                  :to="{ path: '/', hash: `#${item.title.toLowerCase()}` }"
+                >
+                  <span class="text-gray-200 hover:text-orange-700">
+                    {{ item.title }}
+                  </span>
+                </NuxtLink>
+              </li>
+            </ul>
+          </div>
 
-      <div class="grid grid-cols-3 ml-8 gap-64">
-        <div class="flex flex-col">
-          <p class="text-lg font-bold text-white mb-4">Links</p>
-          <ul>
-            <li v-for="item in links" class="mb-4">
-              <NuxtLink
-                :to="{ path: '/', hash: `#${item.title.toLowerCase()}` }"
-              >
-                <span class="text-gray-200 hover:text-orange-700">
-                  {{ item.title }}
-                </span>
-              </NuxtLink>
-            </li>
-          </ul>
-        </div>
-        <div class="flex flex-col">
-          <p class="text-lg font-bold text-white mb-4">Resources</p>
-          <ul>
-            <li v-for="item in resources" class="mb-4">
-              <NuxtLink
-                :to="{ path: '/', hash: `#${item.title.toLowerCase()}` }"
-              >
-                <span class="text-gray-200 hover:text-orange-700">
-                  {{ item.title }}
-                </span>
-              </NuxtLink>
-            </li>
-          </ul>
-        </div>
-        <div class="flex flex-col">
-          <p class="text-lg font-bold text-white mb-4">Company</p>
-          <ul>
-            <li v-for="item in company" class="mb-4">
-              <NuxtLink
-                :to="{ path: '/', hash: `#${item.title.toLowerCase()}` }"
-              >
-                <span class="text-gray-200 hover:text-orange-700">
-                  {{ item.title }}
-                </span>
-              </NuxtLink>
-            </li>
-          </ul>
+          <div class="flex flex-col">
+            <p class="text-lg font-bold text-white mb-4">Resources</p>
+            <ul>
+              <li v-for="item in resources" class="mb-4">
+                <NuxtLink
+                  :to="{ path: '/', hash: `#${item.title.toLowerCase()}` }"
+                >
+                  <span class="text-gray-200 hover:text-orange-700">
+                    {{ item.title }}
+                  </span>
+                </NuxtLink>
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col">
+            <p class="text-lg font-bold text-white mb-4">Company</p>
+            <ul>
+              <li v-for="item in company" class="mb-4">
+                <NuxtLink
+                  :to="{ path: '/', hash: `#${item.title.toLowerCase()}` }"
+                >
+                  <span class="text-gray-200 hover:text-orange-700">
+                    {{ item.title }}
+                  </span>
+                </NuxtLink>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

@@ -6,15 +6,15 @@ import Button from "../Button.vue";
 
 <template>
   <header
-    class="h-[85px] backdrop-blur sticky top-0 z-50 flex border-b-gray-200 border-b"
+    class="h-[85px] backdrop-blur sticky top-0 z-50 flex border-b-gray-200 border-b items-center"
   >
-    <div
-      class="mx-auto px-4 sm:px-6 lg:px-8 max-w-[80%] flex items-center justify-center w-full"
-    >
+    <div class="mx-auto p-4 sm:p-6 lg:p-16 2xl:max-w-[80%] w-full">
       <div class="flex items-center justify-between w-full">
         <Logo />
         <Nav />
-        <Button :text="'Create account'" />
+        <div class="hidden lg:block">
+          <Button :text="'Create account'" />
+        </div>
       </div>
     </div>
   </header>
