@@ -13,7 +13,7 @@ import Button from "../Button.vue";
         <Logo />
         <Nav />
         <div class="hidden lg:block">
-          <Button :text="'Create account'" />
+          <Button :text="'Try it'" />
         </div>
       </div>
     </div>

@@ -20,7 +20,7 @@ import Button from "../Button.vue";
       </h3>
       <div class="mt-8">
         <div class="flex space-x-4">
-          <Button :text="'Create account'" />
+          <Button :text="'Try it'" />
           <Button :text="'Learn more'" :outlined="true" />
         </div>
       </div>
@@ -28,7 +28,7 @@ import Button from "../Button.vue";
 
     <div class="my-16">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <OverviewCards />
+        <Features />
       </div>
     </div>
   </div>

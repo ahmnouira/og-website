@@ -2,7 +2,6 @@
 const props = defineProps({
   title: { type: String, required: true },
   text: { type: String, required: true },
-  image: { type: String, required: true },
 });
 </script>
 
